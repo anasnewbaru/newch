@@ -6,15 +6,13 @@
     <title>Annas - API Documentation</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap">
     <link rel="stylesheet" href="css/index.css">
-    </head>
+</head>
 <body>
     <div class="bg-animation"></div>
     <div class="floating-shapes">
-        <div class="shape shape-1"></div>
-        <div class="shape shape-2"></div>
-        <div class="shape shape-3"></div>
-        <div class="shape shape-4"></div>
-        <div class="shape shape-5"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
     </div>
 
     <div class="header-container" id="header">
@@ -37,9 +35,9 @@
     <div class="container">
         <section class="hero-section">
             <h1 class="hero-title">Annas API</h1>
-            <p class="hero-subtitle">Powerful REST API Platform for Developers</p>
+            <p class="hero-subtitle">REST API Platform</p>
             <p class="hero-description">
-                Selamat datang di dokumentasi Annas API. Kami menyediakan berbagai endpoint API yang kuat, aman, dan mudah digunakan untuk mendukung aplikasi Anda. Jelajahi fitur-fitur kami dan mulai bangun sesuatu yang luar biasa hari ini!
+                peler
             </p>
             <div class="hero-buttons">
                 <a href="#endpoints" class="hero-btn primary">
@@ -60,7 +58,6 @@
 
         <section id="info" class="section">
             <h2 class="section-title">System Information</h2>
-            <p class="section-description">Pantau status sistem kami secara real-time untuk memastikan kinerja optimal.</p>
             <div class="info-grid">
                 <div class="info-card animate-card" style="animation-delay: 0.1s">
                     <div class="info-card-icon">
@@ -122,13 +119,12 @@
 
         <section id="endpoints" class="section">
             <h2 class="section-title">API Endpoints</h2>
-            <p class="section-description">Daftar endpoint API yang tersedia untuk integrasi aplikasi Anda.</p>
             <div class="endpoints-container">
                 <div class="endpoint animate-card" style="animation-delay: 0.1s">
                     <div class="endpoint-header">
                         <div class="endpoint-info">
-                            <span class="method get">GET</span>
-                            <span class="endpoint-path">/api/bug/forcecall</span>
+                            <span class="method">GET</span>
+                            <span class="endpoint-path">/api/forcecall</span>
                         </div>
                         <div class="endpoint-actions">
                             <button class="action-btn" onclick="goToEndpoint('/api/bug/forcecall?target=')" title="Open endpoint">
@@ -150,14 +146,7 @@
                     </div>
                     <div class="endpoint-body">
                         <p class="endpoint-description">
-                            🚀 Endpoint ini digunakan untuk simulasi pemanggilan paksa ke target tertentu.
-                        </p>
-                        <pre class="code-block"><code>GET /api/bug/forcecall?target=<span class="param">{target_id}</span></code></pre>
-                        <p class="endpoint-params">
-                            <strong>Parameters:</strong> <code>target</code> (string, required) - ID target yang akan dipanggil.
-                        </p>
-                        <p class="endpoint-response">
-                            <strong>Response:</strong> <code>{ "status": "success", "message": "Force call initiated for {target_id}" }</code>
+                            🚀 <strong>Penis</strong> - ah ah ah
                         </p>
                     </div>
                 </div>
@@ -165,7 +154,7 @@
                 <div class="endpoint animate-card" style="animation-delay: 0.2s">
                     <div class="endpoint-header">
                         <div class="endpoint-info">
-                            <span class="method get">GET</span>
+                            <span class="method">GET</span>
                             <span class="endpoint-path">/api/carousels</span>
                         </div>
                         <div class="endpoint-actions">
@@ -188,253 +177,15 @@
                     </div>
                     <div class="endpoint-body">
                         <p class="endpoint-description">
-                            🎠 <strong>Endpoint ini menyediakan data untuk komponen carousel pada aplikasi Anda.</strong>
-                        </p>
-                        <pre class="code-block"><code>GET /api/carousels?target=<span class="param">{category}</span>&fjids=<span class="param">{item_ids}</span></code></pre>
-                        <p class="endpoint-params">
-                            <strong>Parameters:</strong> <code>target</code> (string, optional) - Kategori carousel. <code>fjids</code> (string, optional) - Daftar ID item (dipisahkan koma).
-                        </p>
-                        <p class="endpoint-response">
-                            <strong>Response:</strong> <code>{ "status": "success", "data": [ { "id": "1", "title": "Item 1", "image": "url" } ] }</code>
+                            🎠 <strong>yukina kresh</strong> - 🤓.
                         </p>
                     </div>
                 </div>
-
-                <div class="endpoint animate-card" style="animation-delay: 0.3s">
-                    <div class="endpoint-header">
-                        <div class="endpoint-info">
-                            <span class="method post">POST</span>
-                            <span class="endpoint-path">/api/users</span>
-                        </div>
-                        <div class="endpoint-actions">
-                            <button class="action-btn" title="Coming Soon" disabled>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="10"></circle>
-                                    <line x1="12" y1="16" x2="12" y2="12"></line>
-                                    <line x1="12" y1="8" x2="12" y2="8"></line>
-                                </svg>
-                                Soon
-                            </button>
-                            <button class="action-btn" onclick="copyEndpoint('/api/users')" title="Copy endpoint">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-                                </svg>
-                                Copy
-                            </button>
-                        </div>
-                    </div>
-                    <div class="endpoint-body">
-                        <p class="endpoint-description">
-                            👥 Endpoint ini digunakan untuk membuat user baru dalam sistem.
-                        </p>
-                        <pre class="code-block"><code>POST /api/users</code></pre>
-                        <p class="endpoint-params">
-                            <strong>Body:</strong> <code>{ "username": "string", "email": "string", "password": "string" }</code>
-                        </p>
-                        <p class="endpoint-response">
-                            <strong>Response:</strong> <code>{ "status": "success", "message": "User created", "user_id": "uuid" }</code>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="endpoint animate-card" style="animation-delay: 0.4s">
-                    <div class="endpoint-header">
-                        <div class="endpoint-info">
-                            <span class="method get">GET</span>
-                            <span class="endpoint-path">/api/products/{id}</span>
-                        </div>
-                        <div class="endpoint-actions">
-                            <button class="action-btn" onclick="goToEndpoint('/api/products/123')" title="Open example">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                    <polyline points="15 3 21 3 21 9"></polyline>
-                                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                                </svg>
-                                Launch
-                            </button>
-                            <button class="action-btn" onclick="copyEndpoint('/api/products/{id}')" title="Copy endpoint">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-                                </svg>
-                                Copy
-                            </button>
-                        </div>
-                    </div>
-                    <div class="endpoint-body">
-                        <p class="endpoint-description">
-                            🛒 Endpoint untuk mendapatkan detail produk berdasarkan ID.
-                        </p>
-                        <pre class="code-block"><code>GET /api/products/<span class="param">{product_id}</span></code></pre>
-                        <p class="endpoint-params">
-                            <strong>Parameters:</strong> <code>product_id</code> (string, required) - ID unik produk.
-                        </p>
-                        <p class="endpoint-response">
-                            <strong>Response:</strong> <code>{ "id": "123", "name": "Laptop Pro", "price": 1200.00 }</code>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="endpoint animate-card" style="animation-delay: 0.5s">
-                    <div class="endpoint-header">
-                        <div class="endpoint-info">
-                            <span class="method delete">DELETE</span>
-                            <span class="endpoint-path">/api/products/{id}</span>
-                        </div>
-                        <div class="endpoint-actions">
-                            <button class="action-btn" title="Coming Soon" disabled>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="10"></circle>
-                                    <line x1="12" y1="16" x2="12" y2="12"></line>
-                                    <line x1="12" y1="8" x2="12" y2="8"></line>
-                                </svg>
-                                Soon
-                            </button>
-                            <button class="action-btn" onclick="copyEndpoint('/api/products/{id}')" title="Copy endpoint">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-                                </svg>
-                                Copy
-                            </button>
-                        </div>
-                    </div>
-                    <div class="endpoint-body">
-                        <p class="endpoint-description">
-                            🗑️ Endpoint untuk menghapus produk dari database.
-                        </p>
-                        <pre class="code-block"><code>DELETE /api/products/<span class="param">{product_id}</span></code></pre>
-                        <p class="endpoint-params">
-                            <strong>Parameters:</strong> <code>product_id</code> (string, required) - ID unik produk yang akan dihapus.
-                        </p>
-                        <p class="endpoint-response">
-                            <strong>Response:</strong> <code>{ "status": "success", "message": "Product deleted successfully" }</code>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="endpoint animate-card" style="animation-delay: 0.6s">
-                    <div class="endpoint-header">
-                        <div class="endpoint-info">
-                            <span class="method put">PUT</span>
-                            <span class="endpoint-path">/api/orders/{id}</span>
-                        </div>
-                        <div class="endpoint-actions">
-                            <button class="action-btn" title="Coming Soon" disabled>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="10"></circle>
-                                    <line x1="12" y1="16" x2="12" y2="12"></line>
-                                    <line x1="12" y1="8" x2="12" y2="8"></line>
-                                </svg>
-                                Soon
-                            </button>
-                            <button class="action-btn" onclick="copyEndpoint('/api/orders/{id}')" title="Copy endpoint">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-                                </svg>
-                                Copy
-                            </button>
-                        </div>
-                    </div>
-                    <div class="endpoint-body">
-                        <p class="endpoint-description">
-                            📦 Endpoint untuk memperbarui status pesanan.
-                        </p>
-                        <pre class="code-block"><code>PUT /api/orders/<span class="param">{order_id}</span></code></pre>
-                        <p class="endpoint-params">
-                            <strong>Parameters:</strong> <code>order_id</code> (string, required) - ID pesanan yang akan diperbarui.
-                            <br>
-                            <strong>Body:</strong> <code>{ "status": "string", "tracking_number": "string" (optional) }</code>
-                        </p>
-                        <p class="endpoint-response">
-                            <strong>Response:</strong> <code>{ "status": "success", "message": "Order updated successfully" }</code>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="endpoint animate-card" style="animation-delay: 0.7s">
-                    <div class="endpoint-header">
-                        <div class="endpoint-info">
-                            <span class="method get">GET</span>
-                            <span class="endpoint-path">/api/search</span>
-                        </div>
-                        <div class="endpoint-actions">
-                            <button class="action-btn" onclick="goToEndpoint('/api/search?q=example')" title="Open example">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                    <polyline points="15 3 21 3 21 9"></polyline>
-                                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                                </svg>
-                                Launch
-                            </button>
-                            <button class="action-btn" onclick="copyEndpoint('/api/search?q=')" title="Copy endpoint">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-                                </svg>
-                                Copy
-                            </button>
-                        </div>
-                    </div>
-                    <div class="endpoint-body">
-                        <p class="endpoint-description">
-                            🔍 Endpoint pencarian untuk menemukan data berdasarkan kueri.
-                        </p>
-                        <pre class="code-block"><code>GET /api/search?q=<span class="param">{query}</span>&type=<span class="param">{type}</span></code></pre>
-                        <p class="endpoint-params">
-                            <strong>Parameters:</strong> <code>q</code> (string, required) - Kueri pencarian. <code>type</code> (string, optional) - Tipe data yang dicari (e.g., 'products', 'users').
-                        </p>
-                        <p class="endpoint-response">
-                            <strong>Response:</strong> <code>{ "status": "success", "results": [ { "id": "...", "name": "..." } ] }</code>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="endpoint animate-card" style="animation-delay: 0.8s">
-                    <div class="endpoint-header">
-                        <div class="endpoint-info">
-                            <span class="method post">POST</span>
-                            <span class="endpoint-path">/api/feedback</span>
-                        </div>
-                        <div class="endpoint-actions">
-                            <button class="action-btn" title="Coming Soon" disabled>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="10"></circle>
-                                    <line x1="12" y1="16" x2="12" y2="12"></line>
-                                    <line x1="12" y1="8" x2="12" y2="8"></line>
-                                </svg>
-                                Soon
-                            </button>
-                            <button class="action-btn" onclick="copyEndpoint('/api/feedback')" title="Copy endpoint">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-                                </svg>
-                                Copy
-                            </button>
-                        </div>
-                    </div>
-                    <div class="endpoint-body">
-                        <p class="endpoint-description">
-                            📝 Endpoint untuk mengirimkan umpan balik pengguna.
-                        </p>
-                        <pre class="code-block"><code>POST /api/feedback</code></pre>
-                        <p class="endpoint-params">
-                            <strong>Body:</strong> <code>{ "email": "string", "message": "string" }</code>
-                        </p>
-                        <p class="endpoint-response">
-                            <strong>Response:</strong> <code>{ "status": "success", "message": "Feedback received" }</code>
-                        </p>
-                    </div>
-                </div>
-                </div>
+            </div>
         </section>
 
         <section id="contact" class="contact-section section">
             <h2 class="contact-title">Connect With Us</h2>
-            <p class="section-description">Jangan ragu untuk menghubungi kami melalui platform berikut jika Anda memiliki pertanyaan atau membutuhkan dukungan.</p>
             <div class="contact-links">
                 <a href="https://t.me/kyuucode" class="contact-link" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -460,7 +211,7 @@
 
     <footer>
         <div class="footer-content">
-            <p>&copy; 2025 Annas API - Professional REST API Documentation Platform</p>
+            <p>© 2025 Annas API - Professional REST API Documentation Platform</p>
             <p class="creator">Designed & Developed with ❤️ by Annas</p>
         </div>
     </footer>
@@ -473,5 +224,177 @@
         <span id="toastMessage">Successfully copied to clipboard! 🎉</span>
     </div>
 
-    <script src="js/main.js"></script> </body>
+    <script>
+        // Header scroll effect
+        const header = document.getElementById('header');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+        
+        // Battery information
+        const batteryElement = document.getElementById('battery');
+        
+        if ('getBattery' in navigator) {
+            navigator.getBattery().then(battery => {
+                updateBatteryInfo(battery);
+                
+                battery.addEventListener('levelchange', () => updateBatteryInfo(battery));
+                battery.addEventListener('chargingchange', () => updateBatteryInfo(battery));
+            });
+        } else {
+            batteryElement.innerHTML = '<span style="color: var(--text-secondary)">Not Available</span>';
+        }
+        
+        function updateBatteryInfo(battery) {
+            const level = Math.floor(battery.level * 100);
+            const charging = battery.charging ? '⚡ Charging' : '🔋 Battery';
+            batteryElement.innerHTML = `${level}% ${charging}`;
+        }
+        
+        // Current time
+        const timeElement = document.getElementById('time');
+        
+        function updateTime() {
+            const now = new Date();
+            const options = { 
+                weekday: 'short', 
+                year: 'numeric', 
+                month: 'short', 
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+                hour12: true
+            };
+            timeElement.textContent = now.toLocaleDateString('en-US', options);
+        }
+        
+        updateTime();
+        setInterval(updateTime, 1000);
+        
+        // IP and region information
+        const ipElement = document.getElementById('ip');
+        const regionElement = document.getElementById('region');
+        
+        fetch('https://ipapi.co/json/')
+            .then(response => response.json())
+            .then(data => {
+                ipElement.textContent = data.ip;
+                regionElement.textContent = `${data.city}, ${data.country_name}`;
+            })
+            .catch(error => {
+                ipElement.innerHTML = '<span style="color: var(--text-secondary)">Unable to fetch</span>';
+                regionElement.innerHTML = '<span style="color: var(--text-secondary)">Unable to fetch</span>';
+            });
+        
+        // Copy endpoint function
+        function copyEndpoint(path) {
+            const fullUrl = window.location.origin + path;
+            navigator.clipboard.writeText(fullUrl)
+                .then(() => {
+                    showToast('🎉 Endpoint URL copied successfully!');
+                })
+                .catch(err => {
+                    showToast('❌ Failed to copy endpoint URL');
+                });
+        }
+        
+        // Go to endpoint function
+        function goToEndpoint(path) {
+            window.open(window.location.origin + path, '_blank');
+        }
+        
+        // Enhanced Toast notification with complete hiding
+        const toast = document.getElementById('toast');
+        const toastMessage = document.getElementById('toastMessage');
+        let toastTimeout;
+        
+        function showToast(message) {
+            // Clear any existing timeout
+            clearTimeout(toastTimeout);
+            
+            // Set message and show
+            toastMessage.textContent = message;
+            toast.classList.add('show');
+            
+            // Hide after delay with complete removal
+            toastTimeout = setTimeout(() => {
+                toast.classList.remove('show');
+                
+                // Additional timeout to ensure complete hiding
+                setTimeout(() => {
+                    toast.style.display = 'none';
+                    setTimeout(() => {
+                        toast.style.display = 'flex';
+                    }, 100);
+                }, 500);
+            }, 3000);
+        }
+        
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+        
+        // Observe all sections and cards
+        document.querySelectorAll('.section, .animate-card').forEach(el => {
+            observer.observe(el);
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Enhanced hover effects
+        document.querySelectorAll('.info-card, .endpoint').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-8px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Add parallax effect to floating shapes
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const shapes = document.querySelectorAll('.shape');
+            
+            shapes.forEach((shape, index) => {
+                const speed = 0.5 + (index * 0.1);
+                shape.style.transform = `translateY(${scrolled * speed}px) rotate(${scrolled * 0.1}deg)`;
+            });
+        });
+
+        // Welcome message with proper hiding
+        setTimeout(() => {
+            showToast('🚀 Welcome to Annas API Documentation!');
+        }, 2000);
+    </script>
+</body>
 </html>
